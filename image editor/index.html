@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image editor javascript</title>
+
+
+    <!-- --------------- style -------------------------------->
+    <link rel="stylesheet" href="style.css">
+    <!---------------- style ---------------------------------->
+
+    <!---------------------- font awesome ---------------------->
+    <link rel="stylesheet" href="https://unpkg.com/browse/boxicons@2.1.2/css/boxicons.css">
+    <script src="https://kit.fontawesome.com/2a944e6c52.js" crossorigin="anonymous"></script>
+
+
+</head>
+
+<body>
+
+    <div class="container disable">
+        <h2>Easy image editor</h2>
+
+        <div class="wrapper">
+
+            <div class="editor-panel">
+
+                <div class="filter">
+
+                    <label class="title"> Filter</label>
+
+                    <div class="options">
+
+                        <button  id="brightness"class="active">Brightness</button>
+                        <button id="saturation">Saturation</button>
+                        <button id="inversion">Inversion</button>
+                        <button id="grayscale">Gray Scale</button>
+
+                    </div>
+                    <!-- options -->
+
+                    <div class="slider">
+
+                        <div class="filter-info">
+
+                            <p class="name">Brightness</p>
+                            <p class="value">100%</p>
+                        </div>
+                        <!-- filter-info -->
+                        <input type="range" value="100" min="0" max="200">
+                    </div>
+                    <!-- slider -->
+                </div>
+                <!-- filter -->
+                <div class="rotate">
+
+                    <label class="title"> Rotate & Flip</label>
+
+                    <div class="options">
+
+                        <button id="left">left </button>
+                        <button id="right">right</button>
+                        <button id="vertical">vertical</button>
+                        <button id="horizontal">horizontal </button>
+
+                    </div>
+                    <!-- options -->
+
+                </div>
+                <!-- rotate -->
+            </div>
+            <!-- editor-panel -->
+            <div class="preview-img">
+
+                <img src="./images/preview.png" alt="preview-img">
+            </div>
+            <!-- preview-img -->
+        </div>
+        <!-- wrapper  -->
+        <div class="controls">
+
+            <button class="reset-filter">Reset filter</button>
+
+            <div class="row">
+                <input type="file" class="file-input" accept="image/*" hidden>
+                <button class="choose-img">Chose image</button>
+                <button class="save-img">Save image</button>
+            </div>
+            <!-- row -->
+        </div>
+        <!-- controls -->
+    </div>
+    <!-- contatiner -->
+
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
